@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TypeScriptCompiler">
+    <option name="nodeInterpreterTextField" value="$PROJECT_DIR$/../.WebStorm2019.2/config/node/node-v10.15.3-linux-x64/bin/node" />
+  </component>
+</project>

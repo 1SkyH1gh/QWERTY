@@ -1,0 +1,69 @@
+[
+  {
+    "id": 0,
+    "login": "thistlemr1144",
+    "password": "thistlemr11",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 0,
+      "task": "отделочные работы"
+    }
+  },
+  {
+    "id": 1,
+    "login": "SkyHigh",
+    "password": "qwerty",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 1,
+      "task": "отделочные работы"
+    }
+
+  },
+  {
+    "id": 2,
+    "login": "Finplan",
+    "password": "qwertyasdf",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 2,
+      "task": "отделочные работы"
+    }
+  },
+  {
+    "id": 3,
+    "login": "Login",
+    "password": "thistlemr11447428920",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 3,
+      "task": "отделочные работы"
+    }
+  },
+  {
+    "id": 4,
+    "login": "TestTest",
+    "password": "thistlemr",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 4,
+      "task": "отделочные работы"
+    }
+  },
+  {
+    "id": 5,
+    "login": "Weparice",
+    "password": "qwerty1234",
+    "profession": "stolyar",
+    "nickname": "Ilya Tormanov",
+    "tasklist": {
+      "taskID": 5,
+      "task": "отделочные работы"
+    }
+  }
+]

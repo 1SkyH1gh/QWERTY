@@ -1,0 +1,271 @@
+.account{
+   display:flex;
+    flex-direction: row;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    width:55%;
+    border-right: 1px solid grey;
+
+}
+.account_header_link{
+    width:100%;
+    flex-direction: row;
+    display: flex;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+.link{
+margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.avatarBlock{
+    margin-top: 1%;
+display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2%;
+
+    width: 20%;
+}
+.avatar{
+
+}
+.avatarimg{
+    width:80px;
+    height:80px;
+
+}
+.addAvatar{
+    margin-left: 10%;
+
+}
+.addavatarimg{
+    width:80px;
+    height:80px;
+}
+.profileInfo{
+
+    width:70%;
+    margin-left: 1%;
+margin-top: 1%;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.currentStatus{
+margin-left: 0.4%;
+display: flex;
+
+    border-radius: 4px;
+    background: cornflowerblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    padding: 6px 8px 6px 8px;
+}
+.name{
+
+}
+.professionPool{
+    margin-left: 1%;
+}
+.profession{
+    margin-left: 1%;
+    font-size: 14px;
+    color: grey;
+}
+.subscriber{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sub{
+   margin-left: 0.4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    background: lightgrey;
+    color: white;
+    margin-top: 1%;
+    padding: 6px 8px 6px 8px;
+}
+
+.functionGive{
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border:1px solid darkgreen;
+    border-radius: 6px;
+    margin-left: 2%;
+    padding: 0px 15px 0px 15px;
+}
+.functionOpen{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: cornflowerblue;
+    border-radius: 6px;
+    margin-left: 2%;
+    padding: 0px 15px 0px 15px;
+}
+.dataStatus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+    margin-left: 2%;
+    padding: 0px 15px 0px 15px;
+}
+.taskAmount{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: orange;
+    border-radius: 6px;
+    padding: 0px 15px 0px 15px;
+    margin-left: 2%;
+}
+.message{
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.giveSVG{
+    margin-top: 3%;
+    width:24px;
+    height: 24px;
+
+}
+.graphicSVG{
+    width:24px;
+    height: 24px;
+}
+.openSVG{
+    width:24px;
+    height: 24px;
+}
+.counterSVG{
+    width:32px;
+    height: 40px;
+}
+.messageAmount{
+position: absolute;
+    background: darkred;
+    color: white;
+    font-size: 10px;
+    padding:1px 5px 1px 5px;
+    border-radius: 12px;
+    margin-bottom: 1.3%;
+    margin-left: 1.1%;
+}
+
+.statusnotDisturb{
+    margin-bottom: 1.6%;
+    margin-left: 2.1%;
+    position: absolute;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    background: orange;
+}
+.statusOnline{
+    margin-bottom: 1.6%;
+    margin-left: 2.1%;
+    position: absolute;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    background: darkgreen;
+}
+.statusAFK{
+    background: darkred;
+    margin-bottom: 1.6%;
+    margin-left: 2.1%;
+    position: absolute;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+}
+
+
+
+/*task transfer-------------------------------------------------*/
+
+
+.transferContainer{
+display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:17%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+margin-top: 10%;
+    margin-left: 40%;
+
+
+}
+.titleForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.formFIO{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inputFIO{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.poolDesigner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   width:100%;
+    justify-content: center;
+    align-items: center;
+
+    align-content: center;
+}
+.sendbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
