@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {FunctionComponent} from "react";
-import {MiniatureUser} from "./MiniatureUser";
-import './AccountStyle.css'
+
+
 
 export interface TaskTransferProps {
 
@@ -9,26 +9,26 @@ export interface TaskTransferProps {
 
 export const TaskTransfer:FunctionComponent<TaskTransferProps>=()=>{
     return(
-        <div className="transferContainer">
-            <div className="titleForm">
+        <div >
+            <div >
                 <strong>Передать задачу</strong>
             </div>
-            <form className="formFIO">
-                <input placeholder="Добавить исполнителя" className="inputFIO"/>
+            <form >
+                <input placeholder="Добавить исполнителя" />
             </form>
-            <div className="poolDesigner">
+            <div >
 
 
             </div>
-            <div className="sendbar">
+            <div >
                 <form>
                     <input placeholder="Добавить комментарий"/>
                 </form>
 
             </div>
-            <div className="footer">
-                <div className="cancel">Cancel</div>
-                <div className="accept">Accept</div>
+            <div >
+                <div >Cancel</div>
+                <div >Accept</div>
             </div>
         </div>
     )

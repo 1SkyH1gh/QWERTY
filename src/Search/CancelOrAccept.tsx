@@ -9,7 +9,7 @@ export interface CancelOrAccept {
 
 export const CancelOrAccept:FunctionComponent<CancelOrAccept>=(props)=>{
     return(
-    <div className="footer">
+    <div>
         <button onClick={props.acceptClick}>Accept</button>
         <button onClick={props.cancelClick}>Cancel</button>
     </div>

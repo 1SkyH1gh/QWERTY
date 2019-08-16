@@ -3,7 +3,7 @@ import {FunctionComponent, useState} from 'react'
 import {AllKeywords} from "./AllKeywords";
 import _selected from '../RenoJson.json'
 import {Selected} from "./Selected";
-import "./Styles.css"
+import styles from './SearchStyles.module.scss'
 import krestik from '../krestik.png'
 
 export interface Word {
@@ -43,19 +43,22 @@ export const Container: FunctionComponent<ContainerProps> = (props) => {
 
     return (
 
-     <div className="container">
-             <div className="preheader">
-             <div className="Statictic">
-                <h2 className="founded">founded :<span className="amount">{amountKeywords.length}/{wordsData.length}</span> words</h2>
+     <div className={styles.searchContainer}>
+             <div className={styles.preContainer} >
+
+             <div className={styles.foundedAmount}>
+                <h2 className={styles.foundedAmountText}>founded :<span >{amountKeywords.length}/{wordsData.length}</span> words</h2>
             </div>
-                 <h2  className="linkDeleteAll" onClick={() => setSelectedAmount([])}>
+                 <div className={styles.deleteAll}><h2  className={styles.deleteButton} onClick={() => setSelectedAmount([])}>
                      Delete All
-                 </h2>
+                 </h2></div>
+
+
 
 
 
             {/*<MapSelected del={()=>delElem(SelectedElem.splice(,1))}/>*/}
-           <div className="selectedWords">{
+           <div className={styles.selected}>{
                 amountKeywords.map((word: Word) =>
                     <Selected
                         key={word.id}
@@ -78,9 +81,9 @@ export const Container: FunctionComponent<ContainerProps> = (props) => {
            </div>
 
 
-            <div className="formStyles">
-                <form onSubmit={handleSubmit}>
-                    <input placeholder="search" className="search"/>
+            <div className={styles.formBlock}>
+                <form onSubmit={handleSubmit} className={styles.formWidth}>
+                    <input placeholder="search" className={styles.inputWidth}/>
                 </form>
             </div>
              </div>
@@ -88,7 +91,7 @@ export const Container: FunctionComponent<ContainerProps> = (props) => {
             {/*<MapAllKeyword addToSelected={() => PushElem(elem.splice(elem.length - 1, 0, elem.word))*/}
             {/*}/>*/}
 
-          <div className="All">  {
+          <div className={styles.allKeywords}>  {
                 words.map(word =>
                     <AllKeywords
                         key={word.id}
@@ -97,11 +100,11 @@ export const Container: FunctionComponent<ContainerProps> = (props) => {
                 )
             }
           </div>
-            <div className='footer'>
+            <div className={styles.footer}>
 
 
-                <h2 className="cancel"><span className="krestikCont"><img src={krestik} className="krestik"/></span>Cancel</h2>
-                <h2 className="accept" >Accept</h2>
+                <h2 className={styles.button}>Cancel</h2>
+                <h2  className={styles.button}>Accept</h2>
             </div>
         </div>
     )

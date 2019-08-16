@@ -1,13 +1,19 @@
 import * as React from 'react'
 import {FunctionComponent} from "react";
-export interface UserProps {
+
+
+
+
+export interface ContentProps{
 
 }
 
-export const User:FunctionComponent<UserProps>=()=>{
+export const Content:FunctionComponent<ContentProps>=()=>{
     return(
         <div>
+
 
         </div>
     )
 }
+

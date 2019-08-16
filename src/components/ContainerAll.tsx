@@ -1,16 +1,16 @@
 import * as React from 'react'
 import {FunctionComponent} from "react";
 import {Header} from "../Header/Header";
-import {Container, Word} from "./Container";
+import {Container, Word} from "../Search/Container";
 import {useState} from "react";
 import _selected from "../RenoJson.json";
 import Popover from "react-tiny-popover";
-import '../Header/HeaderStyle.css'
-import '../containerFullStyle.css'
-import './Styles.css'
-import {Account} from "./Account/Account";
-import {TaskTransfer} from "./Account/TaskTransfer";
-import {render} from "react-dom";
+import styles from './ContainerAllStyles.module.scss'
+
+
+import {Content} from "./Content";
+import {News} from "./News";
+
 
 export interface ContainerAllProps {
 
@@ -21,11 +21,20 @@ export const ContainerAll:FunctionComponent<ContainerAllProps>=(props)=>{
     const [popover,setPopover]=useState(false)
 
     const [selected, setSelected] = useState<ReadonlyArray<Word>>(wordsData);
+
+
+    const [test,setTest]=useState(false)
+
+    const testF=()=>{
+        setTest(true)
+
+    }
     return(
 
 
 
-        <div className="containerFullApp">
+        <div className={styles.containerAll}>
+            <News  test={test}/>
             <Popover
                 isOpen={popover}
                 position={'top'}
@@ -35,13 +44,13 @@ export const ContainerAll:FunctionComponent<ContainerAllProps>=(props)=>{
             <Header popover={popover}
                     setPopover={setPopover}
                     selected={selected}
-
+                    testF={testF}
             />
 
             </Popover>
-            <Account/>
-            <TaskTransfer/>
 
+
+                    <Content/>
         </div>
 
     )

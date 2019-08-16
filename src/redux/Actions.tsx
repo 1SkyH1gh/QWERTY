@@ -1,10 +1,8 @@
 import * as React from 'react'
 import {ActionType, createReducer, createStandardAction, getType, StateType} from "typesafe-actions";
-import {Word} from "../components/Container";
+import {Word} from "../Search/Container";
 import {combineReducers} from "redux";
-import {AllKeywords} from "../components/AllKeywords";
-import {wordsData} from '../components/Container'
-import {Selected} from "../components/Selected";
+
 
 const actions = {
     setData: createStandardAction('SETALL')<Word[]>(),
